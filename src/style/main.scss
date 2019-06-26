@@ -70,13 +70,13 @@ body{
           opacity: .3;
           outline: none;
         }
-
       }
     }
   }
 }
 
 .header_menu-container {
+  z-index: 1;
   .header-menu {
     height: 52px;
 
@@ -93,7 +93,6 @@ body{
         color: #ffffff;
         letter-spacing: 0.05em;
         font-weight: 100;
-
       }
 
       &:hover {
@@ -170,7 +169,7 @@ body{
 }
 
 .hero__container--social{
-  width: 115px;
+  width: 180px;
 
   a{
     list-style-type: none;
@@ -178,6 +177,7 @@ body{
 
     .hero__container--socialItem{
       opacity: .3;
+      font-size: 25px;
 
       &:hover{
         opacity: 1;
@@ -257,7 +257,6 @@ body{
       position: absolute;
       top: 50%;
       left: -90px;
-
     }
 
     &:after {
@@ -268,7 +267,6 @@ body{
       position: absolute;
       top: 50%;
       right: -90px;
-
     }
   }
 }
@@ -292,8 +290,6 @@ body{
 
 .section_featuresMobile{
   padding-top: 80px;
-  //height: 800px;  // -----------!!
-
 }
 
 .featuresMobile_title{
@@ -459,7 +455,7 @@ body{
 
   .gridItem{
     background-size: cover;
-    //width: 294px;
+    width: 294px;
     height: 220px;
     position: relative;
     overflow: hidden;
@@ -511,6 +507,7 @@ body{
   top: 100%;
   transition: all .5s;
   z-index: 2;
+
   .filters_description-title{
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
@@ -548,16 +545,16 @@ body{
 }
 
 .doe{
-  background: url("../../src/img/team/photo_doe.jpg")center no-repeat;
+  background: url("../../src/img/team/photo_doe.jpg")center top no-repeat;
 }
 .hineu{
-  background: url("../../src/img/team/photo_hineu.jpg")center no-repeat;
+  background: url("../../src/img/team/photo_hineu.jpg")center top no-repeat;
 }
 .matrone{
-  background: url("../../src/img/team/photo_matrone.jpg")center no-repeat;
+  background: url("../../src/img/team/photo_matrone.jpg")center top no-repeat;
 }
 .fraulkin{
-  background: url("../../src/img/team/photo_flaulkin.jpg")center no-repeat;
+  background: url("../../src/img/team/photo_flaulkin.jpg")center center no-repeat;
 }
 
 .team_photo{
@@ -653,7 +650,6 @@ body{
 .section_facts{
   background: url("../../src/img/section_facts-bg.jpg")center no-repeat;
   background-size: cover;
-  //height: 450px;
   padding-top: 75px;
   padding-bottom: 100px;
 }
@@ -683,7 +679,7 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .facts_number{
@@ -718,7 +714,6 @@ body{
     color: #062033;
     font-weight: 400;
     padding: 0;
-
   }
 }
 
@@ -772,13 +767,15 @@ body{
   font-size: 14px;
 }
 
+.discuss_social-container{
+  display: flex;
+  flex-direction: column;
+}
+
 .discuss_social-icons{
   color: rgba(6, 32, 51, .2);
   font-size: 15px;
   margin-top: 15px;
-  //&:last-child{
-  //  margin-top: 0;
-  //}
 
   &:hover{
     color: rgba(6, 32, 51, 1);
@@ -792,12 +789,21 @@ body{
   background: url("../../src/img/map.jpg")center no-repeat;
   background-size: cover;
   height: 180px;
+  position: relative;
+}
+.pin{
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  background: url("../../src/img/card_pin.png")center no-repeat;
+  background-size: cover;
+  width: 23px;
+  height: 30px;
 }
 
 
 // -------------------        FOOTER      -----------------
 .footer{
-  height: 250px;
   background-color: #010305;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -809,7 +815,6 @@ body{
     color: #ffffff;
     text-transform: lowercase;
     text-decoration: none;
-
 
     .footer_logo_point{
       color: #4c76ff;
@@ -835,79 +840,134 @@ body{
   color: #ffffff;
 }
 
-.subscribe_label{
-  width: 245px;
+.subscribe_label-email{
+  width: 100%;
   height: 40px;
   border: 2px solid #ffffff;
   border-radius: 3px;
   background-color: transparent;
   position: relative;
 
+  #subscribe_email{
+    height: 100%;
+    width: 80%;
+    background: transparent;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
 }
-#subscribe_email{
-  height: 100%;
-  width: 80%;
-  background: transparent;
-  color: #ffffff;
-  outline: none;
-  border: 1px solid #ffff00;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-#subscribe_submit{
-  content: "\f077";
-  font-family: FontAwesome, sans-serif;
-  height: 100%;
-  width: 20%;
-  background: transparent;
-  color: #ffffff;
-  outline: none;
-  border: 1px solid #ffff00;
+
+.subscribe_submit{
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 5;
+  height: 36px;
+  width: 20%;
+
+  #subscribe_submit{
+    content: "\f077";
+    font-family: FontAwesome, sans-serif;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    color: #ffffff;
+    outline: none;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    z-index: 5;
+  }
+}
+
+.footer_form{
+  position: relative;
+}
+
+.footer_explore{
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 45px;
+  color: #ffffff;
+}
+
+.explore_container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: end;
+  padding-top: 5px;
+
+  li{
+    list-style-type: none;
+    a{
+      color: #ffffff;
+      text-decoration: none;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 12px;
+      line-height: 28px;
+      &:first-child{
+        line-height: 0;
+      }
+
+    }
+  }
 }
 
 
 
-
-
-
-
-
-
-
-
-
-// Малые девайсы («ландшафтные телефоны», >= 576px)
-@media (min-width: 576px) {
-
-}
-
-// Средние девайсы («таблетки», >= 768px)
-@media (min-width: 768px) {
-
-}
-
-// Большие девайсы (десктопы, >= 992px)
-@media (min-width: 992px) {
-
-}
 
 @media screen and (max-width: 992px) {
   .features_item{
     margin: 25px 0;
   }
 
-  .container_facts{
 
-
+  #contact {
+    .container {
+      .row {
+        .discuss_social-container {
+          justify-content: space-between;
+          flex-direction: row;
+        }
+      }
+    }
   }
-}
 
-// Экстрабольшие девайсы (большие десктопы, >= 1200px)
-@media (min-width: 1200px) {
+  .featuresMobile_item-about{
+    font-size: 15px;
+  }
+  .featuresMobile_item-title{
+    font-size: 21px;
+  }
+  .discuss_address{
+    text-align: center;
+  }
 
+  .features_item-title{
+    font-size: 21px;
+  }
+  .features_item-about{
+    font-size: 15px;
+  }
+
+  .gridItem{
+    margin: 5px 0;
+  }
+
+  #header-search{
+    outline-color: transparent;
+  }
+
+  #header-menu {
+    .header_menu-item {
+      a {
+        font-size: 20px;
+      }
+    }
+  }
 }

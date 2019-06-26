@@ -2,7 +2,7 @@
 <html lang="en">
 <head lang="ru">
     <meta charset="UTF-8">
-    <title>Я собираю проекты как рок звезда</title>
+    <title>Sarajevo.</title>
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <!--        Lato fonts           -->
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,400,900&display=swap" rel="stylesheet">
@@ -38,41 +38,41 @@
                 <a class="navbar-brand logo" href="#">sarajevo<span class="logo_point">.</span></a>
 
                 <form class="form-inline search-form">
-                    <input class="form-control header-search" type="search" placeholder="I’am your tag line"
-                           aria-label="Search" style="outline: none">
+                    <input class="form-control header-search" id="header-search" type="search" placeholder="I’am your tag line"
+                           aria-label="Search">
                 </form>
             </div>
 
 
-            <button class="navbar-toggler col-1" type="button" data-toggle="collapse" data-target="#navbarNav"
+            <button class="navbar-toggler col-sm-1 col-md-1" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse header_menu-container col-4 col-md-12 col-sm-12 col-lg-4" id="navbarNav">
-                <ul class="navbar-nav header-menu align-items-center col-sm-12 col-md-12 justify-content-between">
+                <ul class="navbar-nav header-menu align-items-center col-sm-12 col-md-12 justify-content-between" id="header-menu">
                     <li class="nav-item header_menu-item">
-                        <a class="nav-link active" href="#">Home</a>
+                        <a class="nav-link active" href="#hero">Home</a>
                     </li>
                     <li class="nav-item header_menu-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#feature">Features</a>
                     </li>
                     <li class="nav-item header_menu-item">
-                        <a class="nav-link" href="#">Works</a>
+                        <a class="nav-link" href="#works">Works</a>
                     </li>
                     <li class="nav-item header_menu-item">
-                        <a class="nav-link" href="#">Team</a>
+                        <a class="nav-link" href="#team">Team</a>
                     </li>
                     <li class="nav-item header_menu-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section class="section__hero container-fluid">
-        <div class="hero_container col-12">
+    <section id="hero" class="section__hero container-fluid">
+        <div class="hero_container">
             <h1 class="hero_container-title">sarajevo<span>.</span></h1>
             <p class="hero_container-subtitle"><span>/creative</span> one page template.</p>
             <p class="hero_container-about">We are a team of professionals</p>
@@ -85,14 +85,14 @@
         </div>
     </section>
 
-    <section class="section__features container-fluid">
+    <section id="feature" class="section__features container-fluid">
         <div class="section_features-name row">
             <h2 class="col-12 text-center">Features</h2>
             <div><i class="far fa-heart"></i></div>
         </div>
         <div class="container">
             <div class="row">
-                <div class="features_item branding col-sm-10 col-md-4 col-lg-4 mx-auto">
+                <div class="features_item branding col-sm-10 col-md-10 col-lg-4 mx-auto">
                     <div class="branding-logo"></div>
                     <div class="col-sm-12 col-md-10">
                         <h4 class="features_item-title">Branding</h4>
@@ -102,7 +102,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="features_item development col-sm-10 col-md-4 col-lg-4 mx-auto">
+                <div class="features_item development col-sm-10 col-md-10 col-lg-4 mx-auto">
                     <div class="development-logo"></div>
                     <div class="col-10">
                         <h4 class="features_item-title">Development</h4>
@@ -112,7 +112,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="features_item consulting col-sm-10 col-md-4 col-lg-4 mx-auto">
+                <div class="features_item consulting col-sm-10 col-md-10 col-lg-4 mx-auto">
                     <div class="consulting-logo"></div>
                     <div class="col-10">
                         <h4 class="features_item-title">Consulting</h4>
@@ -239,7 +239,7 @@
         </div>
     </section>
 
-    <section class="section_works container-fluid">
+    <section id="works" class="section_works container-fluid">
         <div class="works-name container">
             <h2 class="col-12 text-center">WORK</h2>
             <div><i class="far fa-heart"></i></div>
@@ -250,7 +250,7 @@
                 voluptatem
                 accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
 
-            <div class="works_filters col-7 mx-auto">
+            <div class="works_filters col-10 mx-auto">
                 <ul>
                     <li><a data-filter=".all">All</a></li>
                     <li><a data-filter=".branding">Branding</a></li>
@@ -329,43 +329,12 @@
                     </div>
                 </div>
 
-                <div class="gridItem gridItem3 photography col-sm-6 col-md-6 col-lg-3">
-                    <div class="filters_description">
-                        <div class="filters_description-icon mx-auto"></div>
-                        <p class="filters_description-title">Labore et dolore magnam</p>
-                        <span class="filters_description-subtitle">Photography</span>
-                    </div>
-                </div>
-
-                <div class="gridItem gridItem4 branding col-sm-6 col-md-6 col-lg-3">
-                    <div class="filters_description">
-                        <div class="filters_description-icon mx-auto"></div>
-                        <p class="filters_description-title">Labore et dolore magnam</p>
-                        <span class="filters_description-subtitle">Photography</span>
-                    </div>
-                </div>
-
-                <div class="gridItem gridItem3 photography col-sm-6 col-md-6 col-lg-3">
-                    <div class="filters_description">
-                        <div class="filters_description-icon mx-auto"></div>
-                        <p class="filters_description-title">Labore et dolore magnam</p>
-                        <span class="filters_description-subtitle">Photography</span>
-                    </div>
-                </div>
-
-                <div class="gridItem gridItem4 branding col-sm-6 col-md-6 col-lg-3">
-                    <div class="filters_description">
-                        <div class="filters_description-icon mx-auto"></div>
-                        <p class="filters_description-title">Labore et dolore magnam</p>
-                        <span class="filters_description-subtitle">Photography</span>
-                    </div>
-                </div>
             </div>
         </div>
 
     </section>
 
-    <section class="section_team container">
+    <section id="team" class="section_team container">
         <div class="works-name container">
             <h2 class="col-12 text-center">meet our team</h2>
             <div><i class="far fa-heart"></i></div>
@@ -377,7 +346,7 @@
 
         <div class="row">
 
-            <div class="col-lg-3 text-center team_photo-container">
+            <div class="col-sm-6 col-lg-3 text-center team_photo-container">
                 <div class="team_photo doe">
                     <div class="team_photoDescription">
                         <p class="team_photoDescription-title">Nemo enim ipsam
@@ -395,7 +364,7 @@
                 <p class="team_position">Managing Director</p>
             </div>
 
-            <div class="col-lg-3 text-center team_photo-container">
+            <div class="col-sm-6 col-lg-3 text-center team_photo-container">
                 <div class="team_photo hineu">
                     <div class="team_photoDescription">
                         <p class="team_photoDescription-title">Nemo enim ipsam
@@ -412,7 +381,7 @@
                 <h4 class="team_name">Chystine Hineu</h4>
                 <p class="team_position">Lead Designer</p>
             </div>
-            <div class="col-lg-3 text-center team_photo-container">
+            <div class="col-sm-6 col-lg-3 text-center team_photo-container">
                 <div class="team_photo matrone">
                     <div class="team_photoDescription">
                         <p class="team_photoDescription-title">Nemo enim ipsam
@@ -429,7 +398,7 @@
                 <h4 class="team_name">Martin Matrone</h4>
                 <p class="team_position">Lead Developer</p>
             </div>
-            <div class="col-lg-3 text-center team_photo-container">
+            <div class="col-sm-6 col-lg-3 text-center team_photo-container">
                 <div class="team_photo fraulkin">
                     <div class="team_photoDescription">
                         <p class="team_photoDescription-title">Nemo enim ipsam
@@ -457,32 +426,32 @@
         </div>
 
         <div class="container">
-            <div class="row container_facts">
+            <div class="row container_facts" id="counter">
                 <div class="col-sm-6 col-md-6 col-lg-2 container_facts-item">
                     <div class="circle clock mx-auto"></div>
-                    <span class="facts_number">3200</span>
+                    <span class="facts_number"><span class="counter-value" data-count="3200">0</span></span>
                     <p class="facts_description">Hours of Work</p>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-2 container_facts-item">
                     <div class="circle friends mx-auto"></div>
-                    <span class="facts_number">120</span>
+                    <span class="facts_number"><span class="counter-value" data-count="120">0</span></span>
                     <p class="facts_description">Satisfied Clinets</p>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-2 container_facts-item">
                     <div class="circle rocket mx-auto"></div>
-                    <span class="facts_number">360</span>
+                    <span class="facts_number"><span class="counter-value" data-count="360">0</span></span>
                     <p class="facts_description">Projects delivered</p>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-2 container_facts-item">
                     <div class="circle cup mx-auto"></div>
-                    <span class="facts_number">42</span>
+                    <span class="facts_number"><span class="counter-value" data-count="42">0</span></span>
                     <p class="facts_description">Awards Won</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section_discuss">
+    <section id="contact" class="section_discuss">
         <div class="container">
             <div class="works-name container">
                 <h2 class="col-12 text-center">Let’s Discuss</h2>
@@ -493,7 +462,7 @@
             </p>
 
             <div class="row">
-                <div class="col-lg-2">
+                <div class="col-lg-2 discuss_address">
                     <span class="discuss_address-title col-lg-12">
                         Cras at ultrices erat, sed vulputate!
                     </span>
@@ -519,7 +488,7 @@
                     <input type="submit" value="Send message" id="submit" class="float-right">
                 </form>
 
-                <div class="col-lg-2 d-flex flex-column">
+                <div class="col-sm-3 col-lg-2 discuss_social-container">
                     <a href="#" class="discuss_social-link"><i class="discuss_social-icons fab fa-behance"></i></a>
                     <a href="#" class="discuss_social-link"><i class="discuss_social-icons fab fa-twitter"></i></a>
                     <a href="#" class="discuss_social-link"><i class="discuss_social-icons fab fa-dribbble"></i></a>
@@ -529,7 +498,10 @@
             </div>
         </div>
     </section>
-    <section class="section_map container-fluid"></section>
+
+    <section class="section_map container-fluid">
+        <div class="pin"></div>
+    </section>
 
     <section class="footer container-fluid">
         <div class="container">
@@ -541,21 +513,38 @@
                         exercitation ullamco laboris nisi ut aliquip ex ea commodo
                         consequat.</p>
                 </div>
-                <div class="col-lg-3 col-lg-offset-1 footer_subscribe">
+                <div class="col-lg-4 footer_subscribe">
                     <p class="footer_subscribe">Subscribe </p>
-                    <form action="#" method="post">
-                        <label for="subscribe_email" class="subscribe_label">
+                    <form action="#" method="post" class="footer_form">
+                        <label for="subscribe_email" class="subscribe_label-email">
                             <input type="email" name="emailaddress" id="subscribe_email">
-                            <input type="submit" value="" id="subscribe_submit">
+                        </label>
+                        <label for="subscribe_submit" class="subscribe_submit">
+                            <input type="image" value="" id="subscribe_submit" src="img/arrow-right-solid.svg" alt="img">
                         </label>
                     </form>
                     <p class="footer_subscribe-subtitle">eusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
-                <div class="col-lg-3 footer-explore"></div>
+                <div class="col-lg-4 footer-explore">
+                    <span class="footer_explore">Explore</span>
+                    <div class="row explore_container">
+                        <ul>
+                            <li><a href="#">Envato</a></li>
+                            <li><a href="#">Themecurve</a></li>
+                            <li><a href="#">Kreativeshowcase</a></li>
+                            <li><a href="#">Freebiescurve</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Themeforest</a></li>
+                            <li><a href="#">Microsoft</a></li>
+                            <li><a href="#">Google</a></li>
+                            <li><a href="#">Yahoo</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
 
     <script src="js/main.js"></script>
 </body>
